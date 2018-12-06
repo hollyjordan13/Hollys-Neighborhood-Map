@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1.0,initial-scale=1.0'>
+  <link rel="stylesheet" type="text/css" href="Portfolio_css/portfoliocss.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+  <title>Holly Jordan's Portfolio</title>
+</head>
+
+<body>
+
+  <header class="header">
+    
+    <div class="head_shot">
+      <img class="headshot" src="portfolioimages/headshotextra.jpg" alt="headshot">
+    </div>
+    <div class="logo">
+      <img id="logo" src="portfolioimages/logo.png" alt="Front End Developer Logo">
+    </div> 
+
+  </header>    
+
+  
+  
+
+  <nav id="drawer" class="nav">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="#">Qualifications</a>
+      </li>
+      <li class="nav__item"><a href="#">Education</a></li>
+      <li class="nav__item"><a href="#">Employment</a></li>
+      <li class="nav__item"><a href="#">Experience</a></li>
+    </ul>
+  </nav>
+
+  
+
+  <main>
+    <section class="content">
+      <article class="about">
+        <br>
+        <br>        
+        <h1>Welcome to my site!</h1>
+        <hr>
+        <div class="about_me">
+          <p> My name is Holly. I studied Integrative Physiology and Spanish Language at the University of Colorado at Boulder. I love to travel, spend time with my dogs, and be outside as much as possible. I have big dreams and am a quick and enthusiastic learner. One day I believe I will be able to combine my skills in technology, health, nutrtion, and travel to make a huge impact on the world. I hope my future success will allow me to do more yoga and adopt more puppies!</p>
+          <br>
+          <p> I spent a lot of time learning and working on this site, as well as the projects featured in the links below. The journey wasn't all rainbows and unicorns but I'm learning everyday and I am really proud of how everything turned out! I hope you like it!</p>
+          <br>
+          <p>Comments? Questions? Just wanna say hi? I'd love to hear from you! Contact/Social Media links below.</p> 
+        </div>    
+      </article>
+    </section>
+
+    
+    <article class="featured">
+      <h1><b>Featured Work</b></h1>
+      <hr>
+      <div class="works">
+        <figure class="one">
+          
+          <img src="portfolioimages/cuboulder.jpg" alt="University of Colorado Boulder Campus"> 
+          <h2>Education</h2>
+          <figcaption>
+            
+            <em><b>"Education is what remains after one has forgotten what one has learned in school." ~Albert Einstein</b></em>
+            <br>
+            <br>
+            I earned my Bachelor's degree from the University of Colorado Boulder, where I studied Integrative Physiology and Spanish Language. Boulder is a beautiful city that I was lucky enough to call home for 5 years. Here, I fell in love with hiking, skiing, camping and rock climbing.
+            
+            
+          </figcaption>
+        </figure>
+
+        <figure class="two">
+          
+          <img src="portfolioimages/sansebastian.jpg" alt="Coastal Mountains in San Sebastian, Spain">
+          <h2>Travel</h2>
+          <figcaption>
+            
+            <em><b>"Travel is fatal to prejudice, bigotry, and narrow-mindedness." ~Mark Twain</b></em>
+            <br>
+            <br>
+            With each new place I visit, the wanderlust grows stronger. Rather than feeling as if I am checking destinations off my list, I am constantly more overwhelmed by how vast and large our world really is and the list continues to grow longer. One place that will always be near and dear to my heart is Spain. Here is where I learned to travel on my own, how to be trusting of complete strangers and where I learned a new language!   
+
+
+          </figcaption>
+        </figure>
+        <figure class="three">
+          
+          <img src="portfolioimages/yogakohtao.jpg" alt="Holly in Dancer's pose on the beach">
+          <h2>Yoga</h2>
+          <figcaption>
+           
+            <em><b>“Every human being is the author of his own health or disease.” ~Buddha</b></em>
+            <br>
+            <br>
+            Practicing hot yoga and meditation has given me strength, power and calm both mentally and physically. It has also done wonders for my balance and flexibility, coming from a used-to-be clumsy girl who could barely reach her toes.
+
+
+
+          </figcaption>
+        </figure>
+        
+        <figure class="four">
+          <img src="portfolioimages/brucecavaboone.jpg" alt="Three dogs laying in grass">
+          <h2>Pups</h2>
+          <figcaption>
+            
+            <em><b>"Everything I know I learned from dogs." ~Nora Roberts</b></em>
+            <br>
+            <br>
+            No truer words have ever been spoken. Growing up and spending time with animals not only brings me a sense of peace and calm but has taught me so much about life and relationships. How to not hold resent, always stay positive, loyalty to those you love, excitement no matter how big or small the adventure, how to be hearty in approbation and lavish in your praise when dealing with others etc etc etc. You get the point. Plus who doesn't love to cuddle?
+
+          </figcaption>
+        </figure>
+      </div>
+    </article>  
+    
+
+    
+    <footer>
+      <hr>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Connect on LinkedIn</a></li>
+        <li><a href="#">Connect on Glassdoor</a></li>
+      </ul>
+    </footer>
+  </main>
+  
+  <script>
+    var menu = document.querySelector('#menu');
+    var main = document.querySelector('main');
+    var drawer = document.querySelector('.nav');
+
+    menu.addEventListener('click', function(e) {
+      drawer.classList.toggle('open');
+      e.stopPropagation();
+    });
+    main.addEventListener('click', function() {
+      drawer.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>          
