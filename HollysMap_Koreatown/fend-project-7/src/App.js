@@ -4,11 +4,10 @@ import Map from './component/map.js';
 import SquareAPI from './API/';
 import SideBar from './component/sidebar.js';
 
-class App extends Component {
+export default class App extends Component {
   constructor() {
     super();
     this.state = {
-      //sidebarOpen: false,
       venues: [],
       markers: [],
       center: [],
@@ -17,18 +16,8 @@ class App extends Component {
         this.setState(obj);
       }
      
-    }; //this.toggleSideBar = this.toggleSideBar.bind(this);  
+    }; 
   }
-
-  //handleClose() {
-//    this.setState({ showModal: false });
-//  }
-//  handleShow() {
-//    this.setState({ showModal: true });
-//  }
-//  toggleSideBar(){
-//    this.setState(state => ({ sidebarOpen: !state.sidebarOpen}));
-//  }
 
   closeAllMarkers = () => {
     const markers = this.state.markers.map(marker => {
@@ -88,4 +77,4 @@ class App extends Component {
   }
 }
 
-export default App;
+

@@ -22,6 +22,10 @@ To get started developing right away:
 
 * install all project dependencies with `npm install`
 * start the development server with `npm start`
+* to run the app in production build (with react app service worker): 
+	npm run build
+	serve -s build
+	And then visit localhost:5000
 * obtain Google Maps and Foursquare API key
 
 ##Considerations
