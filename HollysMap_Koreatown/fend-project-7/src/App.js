@@ -62,10 +62,15 @@ export default class App extends Component {
           isVisible: true,
           id: venue.id
         };
-      });
+      })
       this.setState({venues, center, markers});
-   });   
+    }).catch(function(error) {
+        alert('An error has occurred')
+      });
   }
+
+        
+
   render() {
     return (
       <div className="App">
